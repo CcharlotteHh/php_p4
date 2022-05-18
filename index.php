@@ -5,7 +5,7 @@ include('class.php');
 $instance1 = new Phone('Galaxy a52', 'legit description of a phone', 222, 'Samsung');
 $instance2 = new Phone('LG phone', 'legit product description 2', 555, 'LG');
 $instance3 = new SmartPhone('Iphone', 'legit product description 3', 66, 'Apple');
-
+$instance4 = new FlipPhone('Nokia 2720', 'an old phone', 15,'Nokia');
 echo $instance1 -> displayProduct();
 
  $instance1 -> setBrand("poco"); //sets new brand using the setBrand() function
@@ -18,5 +18,7 @@ echo $instance2 -> getBrand() . '<br>';
 echo $instance3 -> displayProduct()  . '<br>';
 echo $instance3 -> isSmartPhone()  . '<br>';
 
+echo $instance4 -> displayProduct()  . '<br>';
+echo $instance4 -> isFlipPhone() . '<br>';
 
 

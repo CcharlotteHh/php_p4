@@ -51,7 +51,7 @@ class FlipPhone extends Phone{
         parent::__construct($name, $description, $price,$brand);
     }
 
-    public function isSmartPhone(){
+    public function isFlipPhone(){
         return "$this->name is a flipphone <br>";
     }
 }
