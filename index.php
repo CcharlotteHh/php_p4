@@ -2,8 +2,9 @@
 include('class.php');
 
 
-$instance1 = new Product('Galaxy a52', 'legit description of a phone', 222, 'Samsung');
-$instance2 = new Product('LG phone', 'legit product description', 555, 'LG');
+$instance1 = new Phone('Galaxy a52', 'legit description of a phone', 222, 'Samsung');
+$instance2 = new Phone('LG phone', 'legit product description 2', 555, 'LG');
+$instance3 = new SmartPhone('Iphone', 'legit product description 3', 66, 'Apple');
 
 echo $instance1 -> displayProduct();
 
@@ -12,3 +13,10 @@ echo $instance1 -> displayProduct();
 
 echo $instance2 -> displayProduct();
 echo $instance2 -> getBrand() . '<br>';
+
+
+echo $instance3 -> displayProduct()  . '<br>';
+echo $instance3 -> isSmartPhone()  . '<br>';
+
+
+

@@ -1,6 +1,6 @@
 <?php 
 
-class Product {
+class Phone {
 
     public $name;
     protected $description;
@@ -32,4 +32,26 @@ class Product {
         
     }
 
+}
+
+class SmartPhone extends Phone{
+    public function __construct($name, $description, $price,$brand){
+      
+        parent::__construct($name, $description, $price,$brand);
+    }
+
+    public function isSmartPhone(){
+        return "$this->name is a smartphone <br>";
+    }
+}
+
+class FlipPhone extends Phone{
+    public function __construct($name, $description, $price,$brand){
+      
+        parent::__construct($name, $description, $price,$brand);
+    }
+
+    public function isSmartPhone(){
+        return "$this->name is a flipphone <br>";
+    }
 }
