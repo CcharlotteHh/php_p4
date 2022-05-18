@@ -2,10 +2,10 @@
 
 class Phone {
 
-    public $name;
+    protected $name;
     protected $description;
-    public $price;
-    private $brand;
+    protected $price;
+    protected $brand;
 
     public function __construct($name, $description, $price,$brand){
         $this->name = $name;
